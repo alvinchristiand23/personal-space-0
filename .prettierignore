@@ -1,0 +1,36 @@
+# dependencies
+node_modules
+
+# testing
+coverage
+
+# next.js
+.next
+out
+
+# production
+build
+
+# static assets 
+public
+
+# misc
+.DS_Store
+*.pem
+
+# debug
+*.lock*
+*.log*
+
+# environment files
+*.env*
+
+# IDE settings
+.vscode
+
+# Vercel deployment
+.vercel
+
+# TypeScript cache and generated files
+*.tsbuildinfo
+next-env.d.ts
