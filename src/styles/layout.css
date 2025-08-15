@@ -9,3 +9,7 @@ aside {
 main {
   @apply border-border min-h-dvh border-x-2 px-4 lg:ml-70;
 }
+
+footer {
+  @apply hidden lg:flex lg:items-center lg:justify-center;
+}

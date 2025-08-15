@@ -26,3 +26,7 @@ ol {
   -ms-overflow-style: none; /* IE and Edge */
   scrollbar-width: none; /* Firefox */
 }
+
+:focus-visible {
+  @apply outline-accent;
+}
