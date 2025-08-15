@@ -1,0 +1,28 @@
+*,
+*::before,
+*::after {
+  @apply box-border;
+}
+
+html {
+  @apply scroll-py-4 scroll-smooth scheme-light-dark transition-colors;
+}
+
+body {
+  @apply bg-primary font-outfit text-text-primary m-0 min-h-dvh overscroll-none p-0 leading-normal font-normal break-words antialiased;
+}
+
+ul,
+ol {
+  @apply list-none;
+}
+
+.scrollbar-none::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.scrollbar-none {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}

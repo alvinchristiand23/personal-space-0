@@ -1,0 +1,11 @@
+.container {
+  @apply mx-auto max-w-[90rem] px-4;
+}
+
+aside {
+  @apply bg-primary fixed bottom-0 left-0 z-20 flex h-fit w-full flex-col pb-4 lg:left-auto lg:h-full lg:w-70 lg:flex-row lg:pt-4;
+}
+
+main {
+  @apply border-border min-h-dvh border-x-2 px-4 lg:ml-70;
+}

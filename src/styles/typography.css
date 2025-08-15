@@ -1,0 +1,36 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  @apply font-pally;
+}
+
+.heading-main {
+  @apply text-xl font-bold md:text-2xl;
+}
+
+.heading-section {
+  @apply text-xl font-bold md:text-2xl;
+}
+
+.heading-subsection {
+  @apply text-lg font-semibold md:text-xl;
+}
+
+.heading-highlight {
+  @apply text-base font-semibold md:text-lg;
+}
+
+.heading-item {
+  @apply text-sm font-medium md:text-base;
+}
+
+p {
+  @apply text-justify text-sm leading-loose md:text-base;
+}
+
+.secondary-text {
+  @apply text-text-secondary text-xs font-medium md:text-sm;
+}
