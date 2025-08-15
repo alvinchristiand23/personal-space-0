@@ -13,3 +13,7 @@ main {
 footer {
   @apply hidden lg:flex lg:items-center lg:justify-center;
 }
+
+.section-content {
+  @apply flex flex-col gap-y-8 pb-8;
+}

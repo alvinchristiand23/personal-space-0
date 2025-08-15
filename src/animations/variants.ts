@@ -32,6 +32,22 @@ export const rotate180DegreeAnimation: Variants = {
   hover: { rotate: 0 },
 };
 
+export const upAnimation: Variants = {
+  initial: { y: 0 },
+  hover: { y: -2 },
+};
+
+export const outlineAnimation: Variants = {
+  initial: (customColor: string) => ({
+    outline: "none",
+    outlineColor: customColor,
+  }),
+  hover: (customColor: string) => ({
+    outline: "2px solid",
+    outlineColor: customColor,
+  }),
+};
+
 export const hoverTransition: Transition = {
   duration: 0.15,
   ease: "easeOut",
