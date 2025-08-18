@@ -2,7 +2,7 @@ import "@/styles/globals.css";
 
 import type { Metadata } from "next";
 
-import { outfit, pally } from "./fonts/fonts";
+import { onest, pally } from "./fonts/fonts";
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -15,7 +15,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={`${outfit.variable} ${pally.variable}`}>
+    <html lang="en" className={`${onest.variable} ${pally.variable}`}>
       <body>{children}</body>
     </html>
   );

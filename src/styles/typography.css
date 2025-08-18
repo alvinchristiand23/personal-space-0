@@ -4,11 +4,7 @@ h3,
 h4,
 h5,
 h6 {
-  @apply font-pally;
-}
-
-.heading-main {
-  @apply text-xl font-bold md:text-2xl;
+  @apply font-pally antialiased;
 }
 
 .heading-section {
@@ -19,18 +15,14 @@ h6 {
   @apply text-lg font-semibold md:text-xl;
 }
 
-.heading-highlight {
-  @apply text-base font-semibold md:text-lg;
-}
-
 .heading-item {
-  @apply text-sm font-medium md:text-base;
+  @apply text-base font-semibold md:text-lg;
 }
 
 p {
   @apply text-justify text-sm leading-loose md:text-base;
 }
 
-.secondary-text {
-  @apply text-text-secondary text-xs font-medium md:text-sm;
+.supporting-text {
+  @apply text-text-secondary text-xs leading-loose font-medium md:text-sm;
 }

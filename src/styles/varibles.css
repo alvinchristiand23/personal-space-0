@@ -9,8 +9,8 @@
   --text-primary: light-dark(#232323, #f1f2f8);
   --text-secondary: light-dark(#464646, #cbd5e1);
 
-  --font-outfit: "Outfit", sans-serif;
-  --font-pally: "Pally", monospace;
+  --font-onest: "onest", sans-serif;
+  --font-pally: "Pally", sans-serif;
 }
 
 @theme {
@@ -24,13 +24,12 @@
   --color-text-primary: var(--text-primary);
   --color-text-secondary: var(--text-secondary);
 
-  --font-outfit: var(--font-outfit);
+  --font-onest: var(--font-onest);
   --font-pally: var(--font-pally);
 
-  --text-2xs: 0.7rem;
   --text-xs: 0.79rem;
   --text-sm: 0.89rem;
-  --text-md: 1rem;
+  --text-base: 1rem;
   --text-lg: 1.13rem;
   --text-xl: 1.27rem;
   --text-2xl: 1.42rem;

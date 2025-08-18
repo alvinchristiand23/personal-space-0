@@ -1,13 +1,14 @@
+import { Onest } from "next/font/google";
 import localFont from "next/font/local";
 
-export const outfit = localFont({
-  src: "./Outfit-Variable.woff2",
+export const onest = Onest({
+  subsets: ["latin"],
+  variable: "--font-onest",
   display: "swap",
-  variable: "--font-outfit",
 });
 
 export const pally = localFont({
   src: "./Pally-Variable.woff2",
-  display: "swap",
   variable: "--font-pally",
+  display: "swap",
 });
