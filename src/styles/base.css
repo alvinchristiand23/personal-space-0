@@ -9,7 +9,7 @@ html {
 }
 
 body {
-  @apply bg-primary font-onest text-text-primary m-0 min-h-dvh overscroll-none p-0 text-base leading-normal font-normal;
+  @apply bg-primary font-onest text-text-primary m-0 min-h-dvh w-full overscroll-none p-0 text-base leading-normal font-normal;
 }
 
 ul,

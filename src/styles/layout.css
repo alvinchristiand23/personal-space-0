@@ -3,17 +3,13 @@
 }
 
 aside {
-  @apply bg-primary fixed bottom-0 left-0 z-20 flex h-fit w-full flex-col pb-4 lg:left-auto lg:h-full lg:w-70 lg:flex-row lg:pt-4;
+  @apply bg-primary fixed bottom-0 left-0 z-40 h-fit w-full pb-4 lg:left-auto lg:h-full lg:w-50 lg:pt-4;
 }
 
 main {
-  @apply border-border min-h-dvh border-x-2 px-4 lg:ml-70;
-}
-
-footer {
-  @apply hidden lg:flex lg:items-center lg:justify-center;
+  @apply flex min-h-dvh flex-col gap-y-12 px-4 lg:ml-50;
 }
 
 .section-content {
-  @apply flex flex-col gap-y-8 pb-8;
+  @apply flex flex-col gap-y-8 px-4;
 }
