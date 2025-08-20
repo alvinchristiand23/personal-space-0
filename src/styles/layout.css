@@ -3,7 +3,7 @@
 }
 
 aside {
-  @apply bg-primary fixed bottom-0 left-0 z-40 h-fit w-full pb-4 lg:left-auto lg:h-full lg:w-50 lg:pt-4;
+  @apply bg-primary border-border fixed bottom-0 left-0 z-40 flex h-fit w-full flex-col border-t-2 px-8 py-8 lg:left-auto lg:h-full lg:w-50 lg:gap-y-12 lg:overflow-y-auto lg:border-t-0 lg:px-4;
 }
 
 main {
@@ -11,5 +11,5 @@ main {
 }
 
 .section-content {
-  @apply flex flex-col gap-y-8 px-4;
+  @apply flex flex-col gap-y-8;
 }
