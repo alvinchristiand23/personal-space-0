@@ -1,9 +1,9 @@
 import React from "react";
 
 import SectionTitle from "../General/SectionTitle";
-import Description from "./Description";
-import Highlight from "./Highlight";
-import Recommendation from "./Recommendation";
+import Highlights from "./Highlights";
+import Introduction from "./Introduction";
+import Recommendations from "./Recommendations";
 import TechStack from "./TechStack";
 
 export default function Overview() {
@@ -11,10 +11,10 @@ export default function Overview() {
     <section id="Overview">
       <SectionTitle title="Overview" sectionNumber="1" />
       <div className="section-content">
-        <Highlight />
-        <Description />
+        <Highlights />
+        <Introduction />
         <TechStack />
-        <Recommendation />
+        <Recommendations />
       </div>
     </section>
   );

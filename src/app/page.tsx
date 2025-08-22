@@ -1,5 +1,5 @@
 import Experience from "@/components/Experience/Experience";
-import Overview from "@/components/Overview/Overview";
+import Overview from "@/components/Overview";
 import Project from "@/components/Project/Project";
 import Sidebar from "@/components/Sidebar/Sidebar";
 import { SITE_TITLE } from "@/constants";

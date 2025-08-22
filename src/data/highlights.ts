@@ -1,4 +1,4 @@
-import { HighlightItem } from "@/types/HighlightItem";
+import { HighlightItem } from "@/types/highlightItem";
 
 export const highlights: HighlightItem[] = [
   {

@@ -6,56 +6,65 @@ import Image from "next/image";
 
 import { motion } from "framer-motion";
 
-import { hoverTransition, outlineAnimation, upAnimation } from "@/animations/variants";
-import { techStacks } from "@/data/techStacks";
-import { TechStackItem } from "@/types/TechStackItem";
+import { hoverTransition } from "@/animations/variants";
+import { techStack } from "@/data/techStack";
+import { TechStackItem } from "@/types/techStackItem";
 
-import Badge from "../General/Badge";
 import SubSectionTitle from "../General/SubSectionTitle";
 
 export default function TechStack() {
   return (
-    <div>
-      <SubSectionTitle title="Tech Stack" />
-      <ul className="scrollbar-none flex max-h-80 flex-wrap justify-center gap-4 overflow-y-scroll">
-        {techStacks.map((item: TechStackItem) => {
-          return (
-            <motion.li
-              key={item.name}
-              initial="initial"
-              whileHover="hover"
-              className={"flex w-36 cursor-pointer flex-col items-center gap-y-2 p-2"}
+    <div className="flex flex-col gap-y-4">
+      <SubSectionTitle title="Tech Stack" subtitle="Technologies and Tools" />
+      <ul className="flex flex-wrap gap-8 py-2">
+        {techStack.map((item: TechStackItem) => (
+          <motion.li
+            key={item.name}
+            initial="initial"
+            whileHover="hover"
+            variants={{
+              initial: {
+                boxShadow: `inset 0 0 2px ${item.color}20, inset 0 0 4px ${item.color}20`,
+              },
+              hover: {
+                boxShadow: `inset 0 0 4px ${item.color}40, inset 0 0 8px ${item.color}40`,
+              },
+            }}
+            transition={hoverTransition}
+            className={"relative cursor-pointer rounded-2xl p-4"}
+          >
+            <motion.div
+              variants={{
+                initial: { x: 0, y: 0, rotate: 0, scale: 1 },
+                hover: { x: 24, y: -24, rotate: 24, scale: 1.1 },
+              }}
+              transition={hoverTransition}
+              className="relative"
             >
-              <motion.div
-                variants={upAnimation}
-                transition={hoverTransition}
-                className="flex items-center gap-x-2"
+              <Image
+                src={item.logo}
+                width={24}
+                height={24}
+                alt={`${item.name} Logo`}
+                className="size-5 object-contain md:size-6"
+              ></Image>
+            </motion.div>
+            <motion.div
+              variants={{
+                initial: { opacity: 0 },
+                hover: { opacity: 1 },
+              }}
+              transition={hoverTransition}
+            >
+              <p
+                style={{ color: `${item.color}` }}
+                className="supporting-text absolute top-0 left-0 flex h-full w-full items-center justify-center"
               >
-                <Image
-                  src={item.logo}
-                  width={20}
-                  height={20}
-                  alt={`${item.name} Logo`}
-                  className="size-5 object-contain"
-                ></Image>
-                <h4 className="heading-item">{item.name}</h4>
-              </motion.div>
-              <div className="flex gap-x-2">
-                {item.tags.map((tag) => (
-                  <motion.div
-                    key={tag}
-                    variants={outlineAnimation}
-                    custom={item.color}
-                    transition={hoverTransition}
-                    className="rounded-lg"
-                  >
-                    <Badge label={tag} />
-                  </motion.div>
-                ))}
-              </div>
-            </motion.li>
-          );
-        })}
+                {item.level}
+              </p>
+            </motion.div>
+          </motion.li>
+        ))}
       </ul>
     </div>
   );
