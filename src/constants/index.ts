@@ -5,6 +5,7 @@ export const SITE_TITLE = "Personal Space - Alvin Christian D";
 export const SITE_DESCRIPTION =
   "Welcome to my personal space! Happy dive into my profile and enjoy your visit!";
 export const HOMEPAGE_URL = "https://alvinchristiand23.my.id";
+export const OG_IMAGE = "/images/alvinchristiand.webp";
 
 export const NAME = "Alvin Christian Davidson Therry";
 export const USERNAME = "@alvinchristiand23";
