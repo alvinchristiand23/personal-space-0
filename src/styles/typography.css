@@ -4,25 +4,25 @@ h3,
 h4,
 h5,
 h6 {
-  @apply font-pally antialiased;
-}
-
-.heading-section {
-  @apply text-xl font-bold md:text-2xl;
-}
-
-.heading-subsection {
-  @apply text-lg font-semibold md:text-xl;
-}
-
-.heading-item {
-  @apply text-base font-semibold md:text-lg;
+  @apply font-pally leading-none antialiased;
 }
 
 p {
-  @apply text-justify text-sm leading-loose md:text-base;
+  @apply text-justify text-base leading-loose;
+}
+
+.heading-section {
+  @apply text-2xl font-bold;
+}
+
+.heading-subsection {
+  @apply text-xl font-semibold;
+}
+
+.heading-item {
+  @apply text-lg font-medium;
 }
 
 .supporting-text {
-  @apply text-text-secondary text-xs leading-loose font-medium md:text-sm;
+  @apply text-text-secondary text-sm font-medium;
 }
